@@ -1,0 +1,16 @@
+/* Univarsal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.external {
+    text-align: center;
+    color: navy;
+    margin-top: 15px;
+}

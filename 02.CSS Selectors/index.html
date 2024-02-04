@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* CSS Univalsal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+            margin: 0 auto;
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-family: sans-serif;
+        }
+
+        /* CSS element Selector */
+        p {
+            color: red;
+            text-align: center;
+        }
+
+        /* CSS Id Selector */
+        #para1 {
+            color: teal;
+            font-size: 2rem;
+            font-family: sans-serif;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        /* CSS Class Selector */
+        .center {
+            color: crimson;
+            text-align: center;
+        }
+
+        .large {
+            font-size: 2rem;
+        }
+
+        /* CSS Group Selector */
+        .group {
+            background-color: teal;
+            padding: 20px;
+        }
+
+        .group,
+        h1,
+        h2,
+        p {
+            text-align: center;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <p>Every paragraph will be affected by the style.</p>
+    <p id="para1">Me too!</p>
+    <p>And me!</p>
+    <section>
+        <h1 class="center large">Red and center-aligned heading</h1>
+        <p class="center">Red and center-align paragraph</p>
+    </section>
+    <section class="group">
+        <h1>Hello world</h1>
+        <h2>Smaller heading</h2>
+        <p>This is a paragraph</p>
+    </section>
+</body>
+
+</html>

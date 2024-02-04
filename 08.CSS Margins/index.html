@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Margin</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        div {
+            width: 50%;
+            height: 50%;
+            border: 1px solid black;
+            background-color: lightblue;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-right: 150px;
+            margin-left: 80px;
+        }
+
+        .auto {
+            margin: auto;
+        }
+
+        .collapse {
+            margin: 0 0 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Using individual margin properties</h2>
+    <div>
+        This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin
+        of 80px.
+    </div>
+    <h2>The auto Value</h2>
+    <div class="auto">
+        You can set the margin property to auto to horizontally center the element within its container.
+
+        The element will then take up the specified width, and the remaining space will be split equally between the
+        left and right margins.
+    </div>
+    <h2>Margin Collapse</h2>
+    <div class="collapse">
+        Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of
+        the two margins.
+
+        This does not happen on left and right margins! Only top and bottom margins!
+    </div>
+</body>
+
+</html>
