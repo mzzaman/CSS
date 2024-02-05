@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators</title>
+    <style>
+        /* Descendant Selector */
+        .decendent p {
+            background-color: yellow;
+        }
+
+        /* Child Selector (>) */
+        .child>p {
+            background-color: aqua;
+        }
+
+        /* Sibling Selector */
+        .sibling div+p {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>Descendant Selector</h2>
+
+        <p>The descendant selector matches all elements that are descendants of a specified element.</p>
+
+        <div class="decendent">
+            <p>Paragraph 1 in the div.</p>
+            <p>Paragraph 2 in the div.</p>
+            <section>
+                <p>Paragraph 3 in the div.</p>
+            </section>
+        </div>
+
+        <p>Paragraph 4. Not in a div.</p>
+        <p>Paragraph 5. Not in a div.</p>
+    </section>
+    <section>
+        <h2>Child Selector</h2>
+
+        <p>The child selector (>) selects all elements that are the children of a specified element.</p>
+
+        <div class="child">
+            <p>Paragraph 1 in the div.</p>
+            <p>Paragraph 2 in the div.</p>
+            <section>
+                <!-- not Child but Descendant -->
+                <p>Paragraph 3 in the div (inside a section element).</p>
+            </section>
+            <p>Paragraph 4 in the div.</p>
+        </div>
+
+        <p>Paragraph 5. Not in a div.</p>
+        <p>Paragraph 6. Not in a div.</p>
+    </section>
+    <section class="sibling">
+        <h2>Adjacent Sibling Selector</h2>
+
+        <p>The + selector is used to select an element that is directly after another specific element.</p>
+        <p>The following example selects the first p element that are placed immediately after div elements:</p>
+
+        <div>
+            <p>Paragraph 1 in the div.</p>
+            <p>Paragraph 2 in the div.</p>
+        </div>
+
+        <p>Paragraph 3. After a div.</p>
+        <p>Paragraph 4. After a div.</p>
+
+        <div>
+            <p>Paragraph 5 in the div.</p>
+            <p>Paragraph 6 in the div.</p>
+        </div>
+
+        <p>Paragraph 7. After a div.</p>
+        <p>Paragraph 8. After a div.</p>
+    </section>
+</body>
+
+</html>

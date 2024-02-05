@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.boxmodel {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    font-family: sans-serif;
+    background-color: #e4f0f0;
+    padding: 10%;
+}
+
+.margin {
+    width: 100%;
+    height: 100%;
+    background: #f1f1f1;
+    border: 2px dashed #bbb;
+    padding: 45px;
+    position: relative;
+    transition: all 0.25s ease-in-out;
+    color: black;
+}
+
+.margin::before {
+    content: "Margin";
+    text-align: center;
+    font-size: 1.4em;
+    position: absolute;
+    left: 0;
+    top: 1.8%;
+    width: 100%;
+}
+
+.border {
+    background: #04AA6D;
+    position: relative;
+    padding: 45px;
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+.border::before {
+    content: "Border";
+    text-align: center;
+    font-size: 1.4em;
+    position: absolute;
+    left: 0;
+    top: 2.8%;
+    width: 100%;
+}
+
+.padding {
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+    color: black;
+    padding: 45px;
+    position: relative;
+}
+
+.padding::before {
+    content: "Padding";
+    text-align: center;
+    width: 100%;
+    font-size: 1.4em;
+    position: absolute;
+    left: 0;
+    top: 3.8%;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    color: black;
+    background-color: #fff;
+    border: 2px dashed #bbb;
+    padding: 20px;
+    position: relative;
+}
+
+.content::before {
+    content: "Content";
+    text-align: center;
+    font-size: 1.4em;
+    display: block;
+    line-height: 3.5;
+}
