@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradients</title>
+    <style>
+        .linear {
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(red, yellow);
+            padding: 20px;
+            margin: 15px 0;
+        }
+
+        .linear2 {
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(to right, red, yellow);
+            padding: 20px;
+            margin: 15px 0;
+        }
+
+        .linear3 {
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(to bottom right, red, yellow);
+            padding: 20px;
+            margin: 15px 0;
+        }
+
+        .angel-180-deg {
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(180deg, red, yellow);
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin: 15px 0;
+        }
+
+        /* Radial Gradient */
+        .radial-gradient {
+            width: 100%;
+            height: 150px;
+            background-image: radial-gradient(red, yellow, green);
+            margin: 20px 0;
+            padding: 20px;
+        }
+
+        /* Radial Gradient Circle */
+        .radial-gradient-circle {
+            width: 100%;
+            height: 150px;
+            background-image: radial-gradient(circle, red, yellow, green);
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">CSS Gradients</h1>
+    <section>
+        <h2>CSS Linear Gradients</h2>
+        <p>To create a linear gradient you must define at least two color stops. Color stops are the colors you want to
+            render smooth transitions among. You can also set a starting point and a direction (or an angle) along with
+            the gradient effect.</p>
+        <div class="linear" style="text-align: center;">
+            Direction - Top to Bottom (this is default)
+        </div>
+        <div class="linear2" style="text-align: center;">
+            Direction - Top to Bottom (this is default)
+        </div>
+        <div class="linear3" style="text-align: center;">
+            Direction - Top to Bottom (this is default)
+        </div>
+    </section>
+    <section>
+        <h1>Using Angles</h1>
+        <p>If you want more control over the direction of the gradient, you can define an angle, instead of the
+            predefined directions (to bottom, to top, to right, to left, to bottom right, etc.). A value of 0deg is
+            equivalent to "to top". A value of 90deg is equivalent to "to right". A value of 180deg is equivalent to "to
+            bottom".</p>
+        <div class="angel-180-deg">
+            180deg
+        </div>
+    </section>
+    <section>
+        <h1>CSS Radial Gradients</h1>
+        <div class="radial-gradient"></div>
+        <div class="radial-gradient-circle"></div>
+    </section>
+</body>
+
+</html>

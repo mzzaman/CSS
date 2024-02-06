@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadow</title>
+    <style>
+        .box-shadow {
+            width: 200px;
+            height: 200px;
+            background: coral;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 10px 10px lightblue;
+            margin: 10px 0;
+        }
+
+        /* Add a Blur Effect to the shadow */
+        .box-shadow-blur {
+            width: 200px;
+            height: 200px;
+            background: coral;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 10px 10px 5px lightblue;
+            margin: 10px 0;
+        }
+
+        /* Add Box-shadow on Cards */
+        .cards {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15px;
+        }
+
+        .card {
+            width: 250px;
+            height: 250px;
+            border: 1px solid #bbb;
+            text-align: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-right: 10px;
+
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            font-size: 40px;
+        }
+
+        .container {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>The box-shadow Property</h1>
+
+        <div class="box-shadow">A div element with a lightblue box-shadow</div>
+        <div class="box-shadow-blur">
+            <h1>Add a Blur Effect to the Shadow</h1>
+            <p>The blur parameter defines the blur radius</p>
+        </div>
+    </section>
+    <section class="cards">
+        <div class="card">
+            <img src="./images/annie.jpg" alt=" Card images">
+            <h1>Card Image</h1>
+        </div>
+        <div class="card">
+            <img src="./images/annie.jpg" alt=" Card images">
+            <h1>Card Image</h1>
+        </div>
+        <div class="card">
+            <img src="./images/annie.jpg" alt=" Card images">
+            <h1>Card Image</h1>
+        </div>
+        <div class="card">
+            <img src="./images/annie.jpg" alt=" Card images">
+            <h1>Card Image</h1>
+        </div>
+
+    </section>
+
+    <section class="cards">
+        <div class="card">
+            <div class="header">
+                <h1>1</h1>
+            </div>
+            <div class="container">
+                <p>February 6, 2024</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="header">
+                <h1>1</h1>
+            </div>
+            <div class="container">
+                <p>February 6, 2024</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="header">
+                <h1>1</h1>
+            </div>
+            <div class="container">
+                <p>February 6, 2024</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="header">
+                <h1>1</h1>
+            </div>
+            <div class="container">
+                <p>February 6, 2024</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
